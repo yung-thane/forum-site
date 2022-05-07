@@ -27,6 +27,7 @@ public class Comment {
     @JoinColumn(name = "postId", referencedColumnName = "postId")
     private Post post;
 
+    //For the timestamp of when the comment was posted.
     private Instant createdDate;
 
     @ManyToOne(fetch = FetchType.LAZY)
